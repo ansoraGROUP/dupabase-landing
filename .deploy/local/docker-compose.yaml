@@ -1,0 +1,22 @@
+services:
+  dupabase-landing:
+    build:
+      context: ../../
+      dockerfile: .deploy/local/Dockerfile
+    container_name: dupabase-landing-local
+    ports:
+      - "10900:3000"
+    volumes:
+      - ../../:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - NODE_ENV=development
+      - WATCHPACK_POLLING=true
+      - CHOKIDAR_USEPOLLING=true
+    restart: unless-stopped
+
+networks:
+  default:
+    external: true
+    name: ansora_network

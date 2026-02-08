@@ -1,0 +1,14 @@
+services:
+  dupabase-landing:
+    image: ghcr.io/ansoragroup/dupabase-landing:prod-latest
+    container_name: dupabase-landing
+    ports:
+      - "10900:80"
+    restart: unless-stopped
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+
+networks:
+  default:
+    external: true
+    name: ansora_network

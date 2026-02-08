@@ -5,10 +5,11 @@ import { CopyButton } from "./copy-button";
 const steps = [
   {
     num: "1",
-    title: "Clone & configure",
+    title: "Clone & point to your PostgreSQL",
     code: `git clone https://github.com/ansoraGROUP/dupabase.git
 cd dupabase
-cp .env.example .env`,
+cp .env.example .env
+# Edit .env — set DATABASE_URL to YOUR PostgreSQL`,
     lang: "bash",
   },
   {
@@ -21,7 +22,8 @@ cp .env.example .env`,
     num: "3",
     title: "Open the dashboard",
     code: `# Open http://localhost:16733
-# Register, create a project, get your API keys`,
+# Create a project, grab your API key, ship
+# Unlimited projects on your $7.59/mo Hetzner VPS`,
     lang: "bash",
   },
 ];

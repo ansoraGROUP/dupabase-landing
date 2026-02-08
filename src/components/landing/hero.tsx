@@ -19,17 +19,17 @@ export function Hero() {
         </Badge>
 
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight max-w-4xl mx-auto leading-[1.1]">
-          The Open-Source
+          Your Supabase. Your Server.
           <br />
           <span className="bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
-            Supabase Alternative
+            A Fraction of the Cost.
           </span>
         </h1>
 
         <p className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          Self-hosted, Supabase-compatible PostgreSQL platform.
+          Supabase-compatible middleware for your own PostgreSQL.
           <br className="hidden sm:block" />
-          Single Go binary. Full dashboard. Your data, your server.
+          <code className="text-green-400 text-foreground/80">$7.59/month</code> on Hetzner instead of <code className="text-red-400 text-foreground/80">$75+/project</code>.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
@@ -67,7 +67,7 @@ export function Hero() {
             <span className="text-green-400">$</span> cd dupabase && make up
             <br />
             <span className="text-muted-foreground/50">
-              # Dashboard ready at http://localhost:16733
+              # Hetzner CPX22 ($7.59/mo) + Dupabase = full Supabase API
             </span>
           </code>
         </div>

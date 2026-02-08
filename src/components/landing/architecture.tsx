@@ -281,7 +281,7 @@ export function Architecture() {
             <ArchNode
               icon={Database}
               title="PostgreSQL"
-              subtitle="Single host instance"
+              subtitle="YOUR database (Hetzner, AWS, anywhere)"
             >
               <p className="text-[10px] uppercase tracking-widest text-muted-foreground/50 mb-2 font-semibold">
                 Databases

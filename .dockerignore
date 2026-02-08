@@ -1,0 +1,54 @@
+# Git
+.git
+.gitignore
+
+# CI/CD
+.github
+.gitlab-ci.yml
+
+# Docker
+.deploy
+docker-compose*.yml
+docker-compose*.yaml
+Dockerfile*
+
+# Environment files
+.env*
+!.env.production
+
+# Dependencies
+node_modules
+
+# Build outputs (for dev, included in prod builds)
+.next
+build
+dist
+out
+
+# Testing
+coverage
+.nyc_output
+jest.config.*
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+__tests__
+
+# Playwright
+.playwright-mcp
+
+# IDE
+.idea
+.vscode
+*.swp
+
+# Build artifacts
+*.log
+.eslintcache
+*.tsbuildinfo
+
+# Documentation
+README.md
+CLAUDE.md
+Makefile

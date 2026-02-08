@@ -118,7 +118,7 @@ export function FeaturesGrid() {
       <SectionHeader
         id="features"
         title="Everything You Need"
-        subtitle="Zero bloat. Full Supabase compatibility. Production-ready from day one."
+        subtitle="Zero bloat. Full Supabase compatibility. Production-ready."
       />
 
       <div ref={ref} className="relative">
