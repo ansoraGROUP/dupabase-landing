@@ -33,4 +33,3 @@ COPY .deploy/_shared/configs/nginx/default.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder /app/out /var/www/html
 
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
